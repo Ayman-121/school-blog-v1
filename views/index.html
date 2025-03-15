@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Collaboration Blog</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Collaboration Blog</h1>
+            <p>Share your thoughts, ideas, and experiences anonymously with fellow students.</p>
+        </header>
+        <main>
+            <h2>Share Your Thoughts</h2>
+
+            <form id="postForm" aria-label="Submit a new blog post">
+                <input type="text" id="title" placeholder="Post Title" required aria-required="true">
+                <textarea id="content" placeholder="Write your post here..." required aria-required="true"></textarea>
+                <button type="submit">Submit Post Anonymously</button>
+            </form>
+
+            <h2>Recent Posts</h2>
+            <div id="posts" aria-live="polite"></div> <!-- Container for displaying posts -->
+        </main>
+        <footer>
+            <p>&copy; 2025 Student Collaboration Blog. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>
